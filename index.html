@@ -35,7 +35,7 @@ a:focus-visible,summary:focus-visible{outline:2.5px solid var(--accent);outline-
 .hero{position:relative;min-height:100vh;overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
 .hero .giant{position:absolute;top:2vh;left:0;width:100%;text-align:center;font-family:var(--display);font-weight:900;
   font-size:clamp(90px,26vw,26rem);line-height:.85;color:var(--accent);letter-spacing:-.02em;user-select:none;white-space:nowrap}
-.hero .photo{position:relative;z-index:2;width:min(480px,60vw);margin-bottom:0}
+.hero .photo{position:relative;z-index:2;width:min(480px,60vw,26vh);margin-bottom:0}
 .hero .photo img{width:100%;display:block;border-radius:26px 26px 0 0;
   -webkit-mask-image:linear-gradient(180deg,#000 74%,transparent);mask-image:linear-gradient(180deg,#000 74%,transparent)}
 .hero .photo .initials{width:min(340px,52vw);aspect-ratio:3/4;border-radius:24px 24px 0 0;background:linear-gradient(180deg,color-mix(in srgb,var(--ink) 82%,var(--accent)),var(--ink));
@@ -66,7 +66,7 @@ a:focus-visible,summary:focus-visible{outline:2.5px solid var(--accent);outline-
 .chip.c3{animation:chipPop .7s 1.25s cubic-bezier(.2,.8,.3,1.2) backwards}
 /* ---------- ABOUT PORTRAIT ---------- */
 .about-portrait{position:absolute;z-index:0;top:-8vh;right:-2vw;width:min(660px,50vw);height:120%;
-  background:url(photo.jpg) top center/cover no-repeat;opacity:.08;filter:grayscale(.3) contrast(1.04);pointer-events:none;
+  background:url(Photo.png) top center/cover no-repeat;opacity:.08;filter:grayscale(.3) contrast(1.04);pointer-events:none;
   -webkit-mask-image:linear-gradient(180deg,transparent,#000 20%,#000 68%,transparent);
   mask-image:linear-gradient(180deg,transparent,#000 20%,#000 68%,transparent)}
 #journey{position:relative;overflow:hidden}
@@ -212,7 +212,7 @@ footer .fine{margin-top:56px;font-size:12.5px;color:color-mix(in srgb,var(--ink)
 
 <header class="hero" id="top">
   <div class="giant">Karla Zepeda</div>
-  <div class="photo"><img src="photo.jpg" alt="Karla Zepeda" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=initials>KZ</div>'"></div>
+  <div class="photo"><img src="Photo.png" alt="Karla Zepeda" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=initials>KZ</div>'"></div>
   <div class="chip c1"><b>5+ Years</b><span>Laboratory &amp; Technical Experience</span></div>
   <div class="chip c2"><b>2 Languages</b><span>Fluent in English &amp; Spanish</span></div>
   <div class="chip c3"><ul><li>Analytical</li><li>Adaptable</li><li>Methodical</li><li>Bilingual</li><li>Detail-Oriented</li></ul></div>
